@@ -54,8 +54,6 @@
             span HB:{{hbAllMembaer}} 
           button.m-1(:class='[selectDep === "LS" ? "wButton" : "gButton"]', @click='selectDep="LS"')
             span LS:{{lsAllMembaer}} 
-          button.m-1(:class='[selectDep === "TTT" ? "wButton" : "gButton"]', @click='selectDep="TTT"')
-            span TTT:{{tttAllMembaer}} 
           button.m-1(:class='[selectDep === "KI" ? "wButton" : "gButton"]', @click='selectDep="KI"')
             span KI:{{kiAllMembaer}} 
           
@@ -162,15 +160,6 @@ export default {
       let members = 0
       let filterDepartment = this.firestoreMember.filter(function(item, index, array){
         if (item.member.gid.indexOf('HS')>=0){
-          members +=1;
-        }
-      });
-      return members;
-    },
-    tttAllMembaer(){
-      let members = 0
-      let filterDepartment = this.firestoreMember.filter(function(item, index, array){
-        if (item.member.gid.indexOf('TTT')>=0){
           members +=1;
         }
       });
