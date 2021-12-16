@@ -1,4 +1,4 @@
-# 18_login
+# 尾牙入場登入QR CODE驗證頁
 
 ## Project setup
 ```
